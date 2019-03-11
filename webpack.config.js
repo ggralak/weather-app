@@ -17,7 +17,7 @@ module.exports = function(environment) {
 
     switch (environment) {
         case 'prod':
-            extras.copyConfig = [{ from: 'src/prod/_redirects', flatten: true }];
+            extras.copyConfig = [];
             extras.scssRule = {
                 test:/\.(s*)css$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']

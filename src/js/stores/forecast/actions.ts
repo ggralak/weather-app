@@ -25,7 +25,7 @@ export function getForecast(place: string) {
     query.push("days=3");
     query.push(`q=${place}`);
 
-    const forecastResponse = await mphClient.get<any>(`http://api.apixu.com/v1/forecast.json?${query.join("&")}`);
+    const forecastResponse = await mphClient.get<any>(`https://api.apixu.com/v1/forecast.json?${query.join("&")}`);
 
     /*
     mphClient.interceptors.request.use(config => {
