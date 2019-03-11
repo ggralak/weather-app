@@ -1,0 +1,93 @@
+
+
+.mph-input {
+  flex-grow: 1;
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 2px solid $grey30;
+
+  flex-grow: 1;
+  font-size: 14px;
+
+  outline: none;
+
+  &::placeholder {
+    color: $grey50;
+  }
+}
+
+.mph-button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  // width: 100%;
+
+  text-transform: capitalize;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  background-color: $main70;
+  color: $grey10;
+  border-radius: 4px;
+
+  padding: 8px 16px;
+  margin: 0;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $main80;
+  }
+
+  &.mph-button-link {
+    background-color: transparent;
+    //background-color: $main20;
+    color: $main70;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    //border-bottom: 1px solid $main70;
+    &:hover {
+      background-color: transparent;
+      //background-color: $main30;
+      color: $main80;
+    }
+  }
+}
+
+.mph-row {
+  width: 100%;
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+
+
+  &.no-spacing {
+    margin: 0;
+  }
+
+  &.actions {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.mph-label {
+  color: $grey70;
+}
+
+.mph-value {
+  color: $grey80;
+  font-weight: $bold;
+  // border-bottom: 3px solid $grey90;
+}
+
+
+@media (max-device-width: 768px) {
+  .mph-button {
+    font-size: 14px;
+  }
+}

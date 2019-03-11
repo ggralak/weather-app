@@ -1,0 +1,38 @@
+
+
+.switch {
+  display: flex;
+  align-items: center;
+  // border: 1px solid $grey30;
+  border-radius: 20px;
+}
+
+.switch-item {
+  background-color: $grey10;
+  color: $grey80;
+  padding: 10px 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  font-size: $fontSize20;
+  border: 1px solid $grey30;
+
+  &.active {
+    background-color: $main70;
+    color: $grey10;
+    cursor: default;
+    border-color: $main70;
+  }
+
+  &:first-of-type {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-right: none;
+  }
+
+  &:last-of-type {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: none;
+  }
+}

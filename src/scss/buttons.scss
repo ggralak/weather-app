@@ -1,0 +1,39 @@
+@import "weights";
+@import "colors";
+
+.button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  text-transform: capitalize;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  background-color: $main60;
+  color: $grey10;
+
+  padding: 10px;
+  margin: 0;
+  &:hover {
+    background-color: $main70;
+  }
+}
+
+.button-link {
+  background-color: transparent;
+  //background-color: $main20;
+  color: $main70;
+  padding: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  //border-bottom: 1px solid $main70;
+  &:hover {
+    background-color: transparent;
+    //background-color: $main30;
+    color: $main80;
+  }
+}
+
