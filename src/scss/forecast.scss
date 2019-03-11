@@ -3,7 +3,7 @@
   // position: relative;
   display: flex;
   flex-direction: column;
-  width: 800px;
+  width: 780px;
   margin-top: 50px;
 }
 
@@ -121,9 +121,29 @@
   font-weight: bold;
   text-transform: capitalize;
 }
-@media (min-width: 1024px) {
 
-  .forecast-day {
+@media (max-width: 768px) {
+
+  .forecast-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .forecast-days {
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+      margin: 10px 0;
+    }
+  }
+
+  .forecast-filter {
+    flex-direction: column;
+    margin: 0 ;
+    & > * {
+      margin: 10px 0;
+    }
   }
 
 }
