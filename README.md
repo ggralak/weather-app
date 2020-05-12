@@ -1,3 +1,8 @@
+
+Weather app which shows current weather in three cities: Dublin, London and New York.
+
+There's quite a few shortcuts here as this project was only few hours long.
+
 To run it:
 
     npm install

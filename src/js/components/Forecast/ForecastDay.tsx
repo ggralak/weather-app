@@ -23,12 +23,8 @@ class ForecastDay extends React.Component<ForecastDayProps, ForecastDayState>{
     return moment.unix(date).format('DD/MM/YY');
   }
 
-  lowTemp() {
-    return this.props.unit ===  'c' ? this.props.forecast.low_c : this.props.forecast.low_f;
-  }
-
-  highTemp() {
-    return this.props.unit ===  'c' ? this.props.forecast.high_c : this.props.forecast.high_f;
+  temp() {
+    return this.props.unit ===  'c' ? this.props.forecast.temp_c : this.props.forecast.temp_f;
   }
 
   render() {
@@ -49,12 +45,8 @@ class ForecastDay extends React.Component<ForecastDayProps, ForecastDayState>{
 
         <div className={'forecast-day__temperature'}>
           <div>
-            <span>Low </span>
-            <span className={'forecast-day__temp-value'}>{this.lowTemp()}&deg;{this.props.unit}</span>
-          </div>
-          <div>
-            <span>High </span>
-            <span className={'forecast-day__temp-value'}>{this.highTemp()}&deg;{this.props.unit}</span>
+            <span>Temp </span>
+            <span className={'forecast-day__temp-value'}>{this.temp()}&deg;{this.props.unit}</span>
           </div>
         </div>
       </div>
