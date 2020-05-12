@@ -1,8 +1,5 @@
-import { ActionCreators, Action } from './actions';
+import {Action, ActionCreators} from './actions';
 import {DayForecast} from "gg-weather-models";
-
-// Action Types
-export type Action = typeof ActionCreators[ keyof typeof ActionCreators ];
 
 // State
 export type State = {
